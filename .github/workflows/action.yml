@@ -15,4 +15,4 @@ jobs:
       with:
         path: "~/.cache/bazel"
         key: bazel
-    - run: bazel run test
+    - run: bazel run xmltest
