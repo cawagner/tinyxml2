@@ -3,6 +3,7 @@ cc_library(
     srcs = ["tinyxml2.cpp"],
     hdrs = ["tinyxml2.h"],
     deps = [],
+    visibility = ["//visibility:public"],
 )
 
 filegroup(
@@ -10,7 +11,7 @@ filegroup(
     srcs = glob(["resources/*.xml", "resources/out/*.txt"]),
 )
 
-cc_binary(
+cc_test(
     name = "xmltest",
     srcs = ["xmltest.cpp"],
     deps = [":tinyxml2"],

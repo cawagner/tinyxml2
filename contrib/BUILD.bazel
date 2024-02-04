@@ -1,0 +1,9 @@
+"""
+This program demonstrates how to use "tinyxml2" to generate conformant HTML5
+by deriving from the "tinyxml2::XMLPrinter" class.
+"""
+cc_binary(
+  name = "html5-printer",
+  srcs = ["html5-printer.cpp"],
+  deps = ["//:tinyxml2"],
+)
