@@ -5,7 +5,7 @@ jobs:
     name: test
     strategy:
       matrix:
-        os: [debian-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
