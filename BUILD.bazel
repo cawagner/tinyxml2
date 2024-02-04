@@ -7,7 +7,7 @@ cc_library(
 
 filegroup(
     name = "resources",
-    srcs = glob(["resources/*.xml"]),
+    srcs = glob(["resources/*.xml", "resources/out/*.txt"]),
 )
 
 cc_binary(
