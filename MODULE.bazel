@@ -1,0 +1,11 @@
+"""
+TinyXML-2 is a C++ XML parser that can be easily integrated into other
+programs. It uses a Document Object Model (DOM) to access and modify XML data,
+and supports different whitespace modes, error reporting, and memory
+management.
+"""
+
+module(
+    name = "tinyxml2",
+    version = "10.0.0",
+)

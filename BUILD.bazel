@@ -1,0 +1,18 @@
+cc_library(
+    name = "tinyxml2",
+    srcs = ["tinyxml2.cpp"],
+    hdrs = ["tinyxml2.h"],
+    deps = [],
+)
+
+filegroup(
+    name = "resources",
+    srcs = glob(["resources/*.xml"]),
+)
+
+cc_binary(
+    name = "xmltest",
+    srcs = ["xmltest.cpp"],
+    deps = [":tinyxml2"],
+    data = [":resources"]
+)
